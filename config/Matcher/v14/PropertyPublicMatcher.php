@@ -1217,31 +1217,42 @@ return [
     'TYPO3\CMS\Core\Authentication\BackendUserAuthentication->errorMsg' => [
         'restFiles' => [
             'Deprecation-108568-BackendUserAuthenticationRecordEditAccessInternals.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->lastTypoLinkResult' => [
         'restFiles' => [
             'Deprecation-109575-ContentObjectRendererPropertiesAndMethods.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->currentRecordNumber' => [
         'restFiles' => [
             'Deprecation-109575-ContentObjectRendererPropertiesAndMethods.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->parentRecordNumber' => [
         'restFiles' => [
             'Deprecation-109575-ContentObjectRendererPropertiesAndMethods.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->parentRecord' => [
         'restFiles' => [
             'Deprecation-109575-ContentObjectRendererPropertiesAndMethods.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->checkPid_badDoktypeList' => [
         'restFiles' => [
             'Deprecation-109575-ContentObjectRendererPropertiesAndMethods.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->bypassAccessCheckForRecords' => [
+        'restFiles' => [
+            'Breaking-110188-DataHandlerDropPropertyBypassAccessCheckForRecords.rst',
         ],
     ],
 

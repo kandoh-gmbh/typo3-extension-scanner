@@ -1,6 +1,11 @@
 <?php
 
 return [
+    'TYPO3\CMS\Backend\Form\Element\UserSysFileStorageIsPublicElement' => [
+        'restFiles' => [
+            'Breaking-110762-FileStoragesAreConfiguredInAFileInsteadOfTheDatabase.rst',
+        ],
+    ],
     // Removed classes
     'RemoveXSS' => [
         'restFiles' => [
@@ -85,6 +90,16 @@ return [
             'Deprecation-77732-ExtbaseArrayUtility.rst',
         ],
     ],
+    'TYPO3\CMS\Fluid\ViewHelpers\Be\AbstractBackendViewHelper' => [
+        'restFiles' => [
+            'Deprecation-110148-ExperimentalBackendViewHelpers.rst',
+        ],
+    ],
+    'TYPO3\CMS\Fluid\ViewHelpers\Be\PagePathViewHelper' => [
+        'restFiles' => [
+            'Deprecation-110148-ExperimentalBackendViewHelpers.rst',
+        ],
+    ],
     'TYPO3\CMS\Fluid\ViewHelpers\CaseViewHelper' => [
         'restFiles' => [
             'Breaking-80700-DeprecatedFunctionalityRemoved.rst',
@@ -101,6 +116,11 @@ return [
         'restFiles' => [
             'Breaking-80700-DeprecatedFunctionalityRemoved.rst',
             'Breaking-79464-ExtFormRefactorFluidRendering.rst',
+        ],
+    ],
+    'TYPO3\CMS\Form\Domain\Runtime\FormRuntime\Lifecycle\AfterFormStateInitializedInterface' => [
+        'restFiles' => [
+            'Breaking-109811-RemovedAfterFormStateInitializedHook.rst',
         ],
     ],
     'TYPO3\CMS\Form\ViewHelpers\Form\CheckboxViewHelper' => [
@@ -306,6 +326,21 @@ return [
         'restFiles' => [
             'Deprecation-81600-UnusedExtbaseExceptions.rst',
             'Breaking-87193-DeprecatedFunctionalityRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Persistence\Generic\LazyLoadingProxy' => [
+        'restFiles' => [
+            'Deprecation-110347-LazyLoadingProxyAndLazyObjectStorage.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Persistence\Generic\LazyObjectStorage' => [
+        'restFiles' => [
+            'Deprecation-110347-LazyLoadingProxyAndLazyObjectStorage.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Persistence\Generic\LoadingStrategyInterface' => [
+        'restFiles' => [
+            'Deprecation-110347-LazyLoadingProxyAndLazyObjectStorage.rst',
         ],
     ],
     'TYPO3\CMS\Extbase\Property\Exception\FormatNotSupportedException' => [
@@ -2614,61 +2649,73 @@ return [
     'TYPO3\CMS\Core\Localization\Parser\LocalizationParserInterface' => [
         'restFiles' => [
             'Deprecation-107436-LocalizationParsers.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Core\Localization\Parser\AbstractXmlParser' => [
         'restFiles' => [
             'Deprecation-107436-LocalizationParsers.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Core\Localization\Parser\XliffParser' => [
         'restFiles' => [
             'Deprecation-107436-LocalizationParsers.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Extbase\Annotation\FileUpload' => [
         'restFiles' => [
             'Breaking-107229-RemovedSupportOfAnnotationsInExtbase.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Extbase\Annotation\IgnoreValidation' => [
         'restFiles' => [
             'Breaking-107229-RemovedSupportOfAnnotationsInExtbase.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Extbase\Annotation\Validate' => [
         'restFiles' => [
             'Breaking-107229-RemovedSupportOfAnnotationsInExtbase.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Extbase\Annotation\ORM\Cascade' => [
         'restFiles' => [
             'Breaking-107229-RemovedSupportOfAnnotationsInExtbase.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Extbase\Annotation\ORM\Lazy' => [
         'restFiles' => [
             'Breaking-107229-RemovedSupportOfAnnotationsInExtbase.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Extbase\Annotation\ORM\Transient' => [
         'restFiles' => [
             'Breaking-107229-RemovedSupportOfAnnotationsInExtbase.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Scheduler\AbstractAdditionalFieldProvider' => [
         'restFiles' => [
             'Deprecation-98453-SchedulerTaskRegistrationViaSCOPTIONS.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Scheduler\AdditionalFieldProviderInterface' => [
         'restFiles' => [
             'Deprecation-98453-SchedulerTaskRegistrationViaSCOPTIONS.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Backend\Template\Components\MetaInformation' => [
         'restFiles' => [
             'Deprecation-107813-DeprecateMetaInformationAPI.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Reports\ReportInterface' => [
@@ -2684,6 +2731,7 @@ return [
     'TYPO3\CMS\Frontend\Resource\FilePathSanitizer' => [
         'restFiles' => [
             'Deprecation-107537-FilePathSanitizer.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Core\Service\FlexFormService' => [
@@ -2694,51 +2742,61 @@ return [
     'TYPO3\CMS\Install\Attribute\UpgradeWizard' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\ChattyInterface' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\ConfirmableInterface' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\Confirmation' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\PrerequisiteInterface' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\RepeatableInterface' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\UpgradeWizardInterface' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\AbstractListTypeToCTypeUpdate' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\DatabaseUpdatedPrerequisite' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\ReferenceIndexUpdatedPrerequisite' => [
         'restFiles' => [
             'Deprecation-106947-MoveUpgradeWizardRelatedInterfacesAndAttributeToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Updates\PrerequisiteCollection' => [
@@ -2754,31 +2812,58 @@ return [
     'TYPO3\CMS\Core\Console\CommandNameAlreadyInUseException' => [
         'restFiles' => [
             'Deprecation-108667-DeprecateCommandNameAlreadyInUseException.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Command\LanguagePackCommand' => [
         'restFiles' => [
             'Deprecation-109027-MoveLanguageUpdateCommandAndEventsToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Service\Event\ModifyLanguagePacksEvent' => [
         'restFiles' => [
             'Deprecation-109027-MoveLanguageUpdateCommandAndEventsToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Install\Service\Event\ModifyLanguagePackRemoteBaseUrlEvent' => [
         'restFiles' => [
             'Deprecation-109027-MoveLanguageUpdateCommandAndEventsToEXTcore.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Backend\Form\FormResultCompiler' => [
         'restFiles' => [
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
             'Deprecation-109230-FormResultCompiler.rst',
         ],
     ],
     'TYPO3\CMS\Lowlevel\Integrity\DatabaseIntegrityCheck' => [
         'restFiles' => [
             'Deprecation-107931-LowlevelDatabaseIntegrityCheck.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Mail\Rfc822AddressesParser' => [
+        'restFiles' => [
+            'Breaking-110196-Rfc822AddressesParserRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Seo\XmlSitemap\AbstractXmlSitemapDataProvider' => [
+        'restFiles' => [
+            'Deprecation-110334-AbstractXmlSitemapDataProvider.rst',
+            'Breaking-110334-XmlSitemapDataProviderInterfaceChanged.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\ContentObject\Menu\MenuContentObjectFactory' => [
+        'restFiles' => [
+            'Breaking-110485-MenuContentObjectRegistrationChanged.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\ContentObject\Menu\Exception\NoSuchMenuTypeException' => [
+        'restFiles' => [
+            'Breaking-110485-MenuContentObjectRegistrationChanged.rst',
         ],
     ],
 ];

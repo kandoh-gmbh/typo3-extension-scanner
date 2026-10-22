@@ -282,6 +282,11 @@ return [
             'Breaking-88376-RemovedObsoletePageNotFound_handlingSettings.rst',
         ],
     ],
+    '$GLOBALS[\'TCA\'][\'sys_file_storage\']' => [
+        'restFiles' => [
+            'Breaking-110762-FileStoragesAreConfiguredInAFileInsteadOfTheDatabase.rst',
+        ],
+    ],
     '$GLOBALS[\'TCA\'][\'sys_history\']' => [
         'restFiles' => [
             'Breaking-87936-TCAForSysHistoryRemoved.rst',
@@ -1305,6 +1310,12 @@ return [
             'Feature-107566-IntroducePSR14AfterCurrentPageIsResolvedEvent.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'ext/form\'][\'afterFormStateInitialized\']' => [
+        'restFiles' => [
+            'Breaking-109811-RemovedAfterFormStateInitializedHook.rst',
+            'Feature-109811-PSR14AfterFormStateInitializedEvent.rst',
+        ],
+    ],
     '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'ext/form\'][\'afterSubmit\']' => [
         'restFiles' => [
             'Breaking-107568-RemovedAfterSubmitHook.rst',
@@ -1315,6 +1326,12 @@ return [
         'restFiles' => [
             'Breaking-98239-RemovedAfterBuildingFinishedHook.rst',
             'Feature-98239-IntroducePSR14AfterFormIsBuiltEvent.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'ext/form\'][\'buildFormDefinitionValidationConfiguration\']' => [
+        'restFiles' => [
+            'Breaking-109849-RemovedBuildFormDefinitionValidationConfigurationHook.rst',
+            'Feature-109849-PSR14AfterFormDefinitionValidationConfigurationIsBuiltEvent.rst',
         ],
     ],
     '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'BackendLayoutDataProvider\']' => [
@@ -1358,6 +1375,17 @@ return [
         'restFiles' => [
             'Deprecation-108524-FluidNamespacesInTYPO3_CONF_VARS.rst',
             'Feature-108524-ConfigurationFileToRegisterGlobalFluidNamespaces.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'GFX\'][\'thumbnails\']' => [
+        'restFiles' => [
+            'Breaking-111108-ThumbnailsSettingRemoved.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'GFX\'][\'processor_effects\']' => [
+        'restFiles' => [
+            'Breaking-111109-GFXSettingProcessorEffectsRenamedToSharpen.rst',
         ],
     ],
 ];
