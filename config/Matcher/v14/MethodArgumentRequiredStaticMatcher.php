@@ -14,6 +14,7 @@ return [
         'maximumNumberOfArguments' => 2,
         'restFiles' => [
             'Deprecation-109523-GeneralUtilityIsOnCurrentHostWithoutRequest.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Core\Utility\GeneralUtility::sanitizeLocalUrl' => [
@@ -22,6 +23,7 @@ return [
         'restFiles' => [
             'Breaking-101311-MakeParameterForGeneralUtilitySanitizeLocalUrlRequired.rst',
             'Deprecation-109544-GeneralUtilitySanitizeLocalUrlWithoutRequest.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
     'TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin' => [
@@ -37,6 +39,7 @@ return [
         'maximumNumberOfArguments' => 2,
         'restFiles' => [
             'Deprecation-109548-GeneralUtilityLocationHeaderUrlWithoutRequest.rst',
+            'Breaking-109783-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
 ];
