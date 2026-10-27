@@ -44,9 +44,13 @@ class Scanner
     ) {
     }
 
+    /**
+     * @param string[] $excludeDirs
+     */
     public function scanPath(
         string $path,
-        MatcherBundleCollection $collection
+        MatcherBundleCollection $collection,
+        array $excludeDirs = [],
     ): DirectoryMatches {
         if (!is_dir($path)) {
             throw new \RuntimeException(
@@ -60,6 +64,7 @@ class Scanner
             ->files()
             ->ignoreUnreadableDirs()
             ->in(Utility::removeTrailingDirectorySeparator($path))
+            ->exclude($excludeDirs)
             ->name('*.php')
             ->sortByName();
 
